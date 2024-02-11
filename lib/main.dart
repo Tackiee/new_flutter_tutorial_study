@@ -11,22 +11,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            Text('Default'),
+            Text('Bold', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text('Italic', style: TextStyle(fontStyle: FontStyle.italic)),
+            Text('fontSize = 36', style: TextStyle(fontSize: 36)),
+            Text('Red', style: TextStyle(color: Colors.red)),
+            Container(
+              width: double.infinity,
+              color: Colors.grey,
+              child: Text('TextAlighn.right', textAlign: TextAlign.right),
+            ),
+          ],
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Flutter Demo'),
-          ),
-          body: Center(
-            child: Text('Hello World'),
-          ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            child: Icon(Icons.add),
-          ),
-        ));
+      ),
+    );
   }
 }
 
