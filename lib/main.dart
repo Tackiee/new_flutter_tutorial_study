@@ -43,10 +43,12 @@ class MyApp extends StatelessWidget {
                 width: 200,
                 height: 50,
                 color: Colors.blue,
-                child: Text('200x50'),
+                child: Center(
+                  child: Text('200x50'),
+                ),
               ),
               Container(
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(25),
                 color: Colors.blue,
                 child: Text('padding'),
               ),
