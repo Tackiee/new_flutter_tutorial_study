@@ -81,27 +81,103 @@ class MyApp extends StatelessWidget {
         //     ],
         //   ),
         // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         children: <Widget>[
+        //           Text('first line'),
+        //           Text('second line'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 70,
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('中央寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.end,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('下寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 90,
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('均等に配置'),
+        //           Text('確認するわよ♡'),
+        //           Text('多分そうっぽいわね♡'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('左寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Column(
+        //         crossAxisAlignment: CrossAxisAlignment.end,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('右寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
         body: Column(
           children: <Widget>[
             Container(
               width: double.infinity,
               height: 60,
               color: Colors.grey[200],
-              child: Column(
+              child: Row(
                 children: <Widget>[
-                  Text('first line'),
-                  Text('second line'),
+                  Container(color: Colors.red, child: Text('first')),
+                  Container(color: Colors.blue, child: Text('second')),
+                  Container(color: Colors.green, child: Text('third')),
                 ],
               ),
             ),
             Container(
               width: double.infinity,
-              height: 70,
-              child: Column(
+              height: 60,
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('***'),
-                  Text('中央寄せ'),
+                  Container(color: Colors.red, child: Text('***')),
+                  Container(color: Colors.blue, child: Text('中央寄せ')),
+                  Container(color: Colors.green, child: Text('---')),
                 ],
               ),
             ),
@@ -109,24 +185,24 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
               height: 60,
               color: Colors.grey[200],
-              child: Column(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('***'),
-                  Text('下寄せ'),
+                  Container(color: Colors.red, child: Text('***')),
+                  Container(color: Colors.blue, child: Text('右寄せ')),
+                  Container(color: Colors.green, child: Text('---')),
                 ],
               ),
             ),
             Container(
               width: double.infinity,
-              height: 90,
-              child: Column(
+              height: 60,
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Text('***'),
-                  Text('均等に配置'),
-                  Text('確認するわよ♡'),
-                  Text('多分そうっぽいわね♡'),
+                  Container(color: Colors.red, child: Text('***')),
+                  Container(color: Colors.blue, child: Text('均等配置')),
+                  Container(color: Colors.green, child: Text('---')),
                 ],
               ),
             ),
@@ -134,22 +210,25 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
               height: 60,
               color: Colors.grey[200],
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('***'),
-                  Text('左寄せ'),
+                  Container(color: Colors.red, child: Text('***')),
+                  Container(color: Colors.blue, child: Text('上寄せ')),
+                  Container(color: Colors.green, child: Text('---')),
                 ],
               ),
             ),
             Container(
               width: double.infinity,
               height: 60,
-              child: Column(
+              color: Colors.yellow[200],
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
-                  Text('***'),
-                  Text('右寄せ'),
+                  Container(color: Colors.red, child: Text('***')),
+                  Container(color: Colors.blue, child: Text('下寄せ')),
+                  Container(color: Colors.green, child: Text('---')),
                 ],
               ),
             ),
