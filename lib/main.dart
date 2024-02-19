@@ -155,82 +155,159 @@ class MyApp extends StatelessWidget {
         //     ),
         //   ],
         // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('first')),
+        //           Container(color: Colors.blue, child: Text('second')),
+        //           Container(color: Colors.green, child: Text('third')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('中央寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.end,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('右寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('均等配置')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('上寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.yellow[200],
+        //       child: Row(
+        //         crossAxisAlignment: CrossAxisAlignment.end,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('下寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
         body: Column(
           children: <Widget>[
             Container(
-              width: double.infinity,
-              height: 60,
-              color: Colors.grey[200],
-              child: Row(
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('first')),
-                  Container(color: Colors.blue, child: Text('second')),
-                  Container(color: Colors.green, child: Text('third')),
-                ],
-              ),
+              padding: EdgeInsets.only(top: 32),
+              child: Text('TextButton'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                TextButton(
+                  onPressed: null,
+                  child: Text('disabled'),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text('enabled'),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.red,
+                  ),
+                  onPressed: () {},
+                  child: Text('enabled'),
+                ),
+              ],
             ),
             Container(
-              width: double.infinity,
-              height: 60,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('***')),
-                  Container(color: Colors.blue, child: Text('中央寄せ')),
-                  Container(color: Colors.green, child: Text('---')),
-                ],
-              ),
+              padding: EdgeInsets.only(top: 32),
+              child: Text('OutlinedButton'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                OutlinedButton(
+                  onPressed: null,
+                  child: Text('disabled'),
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('enabled'),
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.red,
+                  ),
+                  child: Text('enabled'),
+                ),
+              ],
             ),
             Container(
-              width: double.infinity,
-              height: 60,
-              color: Colors.grey[200],
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('***')),
-                  Container(color: Colors.blue, child: Text('右寄せ')),
-                  Container(color: Colors.green, child: Text('---')),
-                ],
-              ),
+              padding: EdgeInsets.only(top: 32),
+              child: Text('ElevatedButton'),
             ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('***')),
-                  Container(color: Colors.blue, child: Text('均等配置')),
-                  Container(color: Colors.green, child: Text('---')),
-                ],
-              ),
-            ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              color: Colors.grey[200],
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('***')),
-                  Container(color: Colors.blue, child: Text('上寄せ')),
-                  Container(color: Colors.green, child: Text('---')),
-                ],
-              ),
-            ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              color: Colors.yellow[200],
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: <Widget>[
-                  Container(color: Colors.red, child: Text('***')),
-                  Container(color: Colors.blue, child: Text('下寄せ')),
-                  Container(color: Colors.green, child: Text('---')),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: null,
+                  child: Text('disabled'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('enabled'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.red,
+                    elevation: 16,
+                  ),
+                  child: Text('enabled'),
+                ),
+              ],
             ),
           ],
         ),
