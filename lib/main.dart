@@ -32,302 +32,360 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-          // body: Column(
-          //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //   children: <Widget>[
-          //     Text('Default'),
-          //     Text('Bold', style: TextStyle(fontWeight: FontWeight.bold)),
-          //     Text('Italic', style: TextStyle(fontStyle: FontStyle.italic)),
-          //     Text('fontSize = 36', style: TextStyle(fontSize: 36)),
-          //     Text('Red', style: TextStyle(color: Colors.red)),
-          //     Container(
-          //       width: double.infinity,
-          //       color: Colors.grey,
-          //       child: Text('TextAlighn.right', textAlign: TextAlign.right),
-          //     ),
-          //   ],
-          // ),
-          // body: Center(
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //     children: <Widget>[
-          //       Container(
-          //         color: Colors.blue,
-          //         child: Text('blue'),
-          //       ),
-          //       Container(
-          //         width: 200,
-          //         height: 50,
-          //         color: Colors.blue,
-          //         child: Center(
-          //           child: Text('200x50'),
-          //         ),
-          //       ),
-          //       Container(
-          //         padding: EdgeInsets.all(25),
-          //         color: Colors.blue,
-          //         child: Text('padding'),
-          //       ),
-          //       Container(
-          //         color: Colors.blue,
-          //         child: Container(
-          //           margin: EdgeInsets.all(8),
-          //           color: Colors.green,
-          //           child: Text('margin'),
-          //         ),
-          //       ),
-          //       Container(
-          //         decoration: BoxDecoration(
-          //           border: Border.all(color: Colors.blue, width: 2),
-          //           borderRadius: BorderRadius.circular(8),
-          //         ),
-          //         padding: EdgeInsets.all(8),
-          //         child: Text('border'),
-          //       ),
-          //       Container(
-          //         decoration: BoxDecoration(
-          //           image: DecorationImage(
-          //             image: NetworkImage('https://placehold.jp/200x100.png'),
-          //           ),
-          //         ),
-          //         width: 200,
-          //         height: 100,
-          //         child: Text('image'),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // body: Column(
-          //   children: <Widget>[
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Column(
-          //         children: <Widget>[
-          //           Text('first line'),
-          //           Text('second line'),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 70,
-          //       child: Column(
-          //         mainAxisAlignment: MainAxisAlignment.center,
-          //         children: <Widget>[
-          //           Text('***'),
-          //           Text('中央寄せ'),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Column(
-          //         mainAxisAlignment: MainAxisAlignment.end,
-          //         children: <Widget>[
-          //           Text('***'),
-          //           Text('下寄せ'),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 90,
-          //       child: Column(
-          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //         children: <Widget>[
-          //           Text('***'),
-          //           Text('均等に配置'),
-          //           Text('確認するわよ♡'),
-          //           Text('多分そうっぽいわね♡'),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Column(
-          //         crossAxisAlignment: CrossAxisAlignment.start,
-          //         children: <Widget>[
-          //           Text('***'),
-          //           Text('左寄せ'),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       child: Column(
-          //         crossAxisAlignment: CrossAxisAlignment.end,
-          //         children: <Widget>[
-          //           Text('***'),
-          //           Text('右寄せ'),
-          //         ],
-          //       ),
-          //     ),
-          //   ],
-          // ),
-          // body: Column(
-          //   children: <Widget>[
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Row(
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('first')),
-          //           Container(color: Colors.blue, child: Text('second')),
-          //           Container(color: Colors.green, child: Text('third')),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       child: Row(
-          //         mainAxisAlignment: MainAxisAlignment.center,
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('***')),
-          //           Container(color: Colors.blue, child: Text('中央寄せ')),
-          //           Container(color: Colors.green, child: Text('---')),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Row(
-          //         mainAxisAlignment: MainAxisAlignment.end,
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('***')),
-          //           Container(color: Colors.blue, child: Text('右寄せ')),
-          //           Container(color: Colors.green, child: Text('---')),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       child: Row(
-          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('***')),
-          //           Container(color: Colors.blue, child: Text('均等配置')),
-          //           Container(color: Colors.green, child: Text('---')),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.grey[200],
-          //       child: Row(
-          //         crossAxisAlignment: CrossAxisAlignment.start,
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('***')),
-          //           Container(color: Colors.blue, child: Text('上寄せ')),
-          //           Container(color: Colors.green, child: Text('---')),
-          //         ],
-          //       ),
-          //     ),
-          //     Container(
-          //       width: double.infinity,
-          //       height: 60,
-          //       color: Colors.yellow[200],
-          //       child: Row(
-          //         crossAxisAlignment: CrossAxisAlignment.end,
-          //         children: <Widget>[
-          //           Container(color: Colors.red, child: Text('***')),
-          //           Container(color: Colors.blue, child: Text('下寄せ')),
-          //           Container(color: Colors.green, child: Text('---')),
-          //         ],
-          //       ),
-          //     ),
-          //   ],
-          // ),
-          // body: Column(
-          //   children: <Widget>[
-          //     Container(
-          //       padding: EdgeInsets.only(top: 32),
-          //       child: Text('TextButton'),
-          //     ),
-          //     Row(
-          //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //       children: <Widget>[
-          //         TextButton(
-          //           onPressed: null,
-          //           child: Text('disabled'),
-          //         ),
-          //         TextButton(
-          //           onPressed: () {},
-          //           child: Text('enabled'),
-          //         ),
-          //         TextButton(
-          //           style: TextButton.styleFrom(
-          //             foregroundColor: Colors.red,
-          //           ),
-          //           onPressed: () {},
-          //           child: Text('enabled'),
-          //         ),
-          //       ],
-          //     ),
-          //     Container(
-          //       padding: EdgeInsets.only(top: 32),
-          //       child: Text('OutlinedButton'),
-          //     ),
-          //     Row(
-          //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //       children: <Widget>[
-          //         OutlinedButton(
-          //           onPressed: null,
-          //           child: Text('disabled'),
-          //         ),
-          //         OutlinedButton(
-          //           onPressed: () {},
-          //           child: Text('enabled'),
-          //         ),
-          //         OutlinedButton(
-          //           onPressed: () {},
-          //           style: OutlinedButton.styleFrom(
-          //             foregroundColor: Colors.red,
-          //           ),
-          //           child: Text('enabled'),
-          //         ),
-          //       ],
-          //     ),
-          //     Container(
-          //       padding: EdgeInsets.only(top: 32),
-          //       child: Text('ElevatedButton'),
-          //     ),
-          //     Row(
-          //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //       children: <Widget>[
-          //         ElevatedButton(
-          //           onPressed: null,
-          //           child: Text('disabled'),
-          //         ),
-          //         ElevatedButton(
-          //           onPressed: () {},
-          //           child: Text('enabled'),
-          //         ),
-          //         ElevatedButton(
-          //           onPressed: () {},
-          //           style: ElevatedButton.styleFrom(
-          //             foregroundColor: Colors.red,
-          //             elevation: 16,
-          //           ),
-          //           child: Text('enabled'),
-          //         ),
-          //       ],
-          //     ),
-          //   ],
-          // ),
-          ),
+        // body: Column(
+        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //   children: <Widget>[
+        //     Text('Default'),
+        //     Text('Bold', style: TextStyle(fontWeight: FontWeight.bold)),
+        //     Text('Italic', style: TextStyle(fontStyle: FontStyle.italic)),
+        //     Text('fontSize = 36', style: TextStyle(fontSize: 36)),
+        //     Text('Red', style: TextStyle(color: Colors.red)),
+        //     Container(
+        //       width: double.infinity,
+        //       color: Colors.grey,
+        //       child: Text('TextAlighn.right', textAlign: TextAlign.right),
+        //     ),
+        //   ],
+        // ),
+        // body: Center(
+        //   child: Column(
+        //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //     children: <Widget>[
+        //       Container(
+        //         color: Colors.blue,
+        //         child: Text('blue'),
+        //       ),
+        //       Container(
+        //         width: 200,
+        //         height: 50,
+        //         color: Colors.blue,
+        //         child: Center(
+        //           child: Text('200x50'),
+        //         ),
+        //       ),
+        //       Container(
+        //         padding: EdgeInsets.all(25),
+        //         color: Colors.blue,
+        //         child: Text('padding'),
+        //       ),
+        //       Container(
+        //         color: Colors.blue,
+        //         child: Container(
+        //           margin: EdgeInsets.all(8),
+        //           color: Colors.green,
+        //           child: Text('margin'),
+        //         ),
+        //       ),
+        //       Container(
+        //         decoration: BoxDecoration(
+        //           border: Border.all(color: Colors.blue, width: 2),
+        //           borderRadius: BorderRadius.circular(8),
+        //         ),
+        //         padding: EdgeInsets.all(8),
+        //         child: Text('border'),
+        //       ),
+        //       Container(
+        //         decoration: BoxDecoration(
+        //           image: DecorationImage(
+        //             image: NetworkImage('https://placehold.jp/200x100.png'),
+        //           ),
+        //         ),
+        //         width: 200,
+        //         height: 100,
+        //         child: Text('image'),
+        //       ),
+        //     ],
+        //   ),
+        // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         children: <Widget>[
+        //           Text('first line'),
+        //           Text('second line'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 70,
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('中央寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.end,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('下寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 90,
+        //       child: Column(
+        //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('均等に配置'),
+        //           Text('確認するわよ♡'),
+        //           Text('多分そうっぽいわね♡'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Column(
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('左寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Column(
+        //         crossAxisAlignment: CrossAxisAlignment.end,
+        //         children: <Widget>[
+        //           Text('***'),
+        //           Text('右寄せ'),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('first')),
+        //           Container(color: Colors.blue, child: Text('second')),
+        //           Container(color: Colors.green, child: Text('third')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('中央寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.end,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('右寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       child: Row(
+        //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('均等配置')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.grey[200],
+        //       child: Row(
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('上寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       width: double.infinity,
+        //       height: 60,
+        //       color: Colors.yellow[200],
+        //       child: Row(
+        //         crossAxisAlignment: CrossAxisAlignment.end,
+        //         children: <Widget>[
+        //           Container(color: Colors.red, child: Text('***')),
+        //           Container(color: Colors.blue, child: Text('下寄せ')),
+        //           Container(color: Colors.green, child: Text('---')),
+        //         ],
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       padding: EdgeInsets.only(top: 32),
+        //       child: Text('TextButton'),
+        //     ),
+        //     Row(
+        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: <Widget>[
+        //         TextButton(
+        //           onPressed: null,
+        //           child: Text('disabled'),
+        //         ),
+        //         TextButton(
+        //           onPressed: () {},
+        //           child: Text('enabled'),
+        //         ),
+        //         TextButton(
+        //           style: TextButton.styleFrom(
+        //             foregroundColor: Colors.red,
+        //           ),
+        //           onPressed: () {},
+        //           child: Text('enabled'),
+        //         ),
+        //       ],
+        //     ),
+        //     Container(
+        //       padding: EdgeInsets.only(top: 32),
+        //       child: Text('OutlinedButton'),
+        //     ),
+        //     Row(
+        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: <Widget>[
+        //         OutlinedButton(
+        //           onPressed: null,
+        //           child: Text('disabled'),
+        //         ),
+        //         OutlinedButton(
+        //           onPressed: () {},
+        //           child: Text('enabled'),
+        //         ),
+        //         OutlinedButton(
+        //           onPressed: () {},
+        //           style: OutlinedButton.styleFrom(
+        //             foregroundColor: Colors.red,
+        //           ),
+        //           child: Text('enabled'),
+        //         ),
+        //       ],
+        //     ),
+        //     Container(
+        //       padding: EdgeInsets.only(top: 32),
+        //       child: Text('ElevatedButton'),
+        //     ),
+        //     Row(
+        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: <Widget>[
+        //         ElevatedButton(
+        //           onPressed: null,
+        //           child: Text('disabled'),
+        //         ),
+        //         ElevatedButton(
+        //           onPressed: () {},
+        //           child: Text('enabled'),
+        //         ),
+        //         ElevatedButton(
+        //           onPressed: () {},
+        //           style: ElevatedButton.styleFrom(
+        //             foregroundColor: Colors.red,
+        //             elevation: 16,
+        //           ),
+        //           child: Text('enabled'),
+        //         ),
+        //       ],
+        //     ),
+        //   ],
+        // ),
+        body: Column(
+          children: <Widget>[
+            Container(
+              height: 125,
+              padding: EdgeInsets.all(4),
+              child: ListView(
+                children: <Widget>[
+                  Container(
+                    height: 50,
+                    color: Colors.blue[600],
+                    child: Text('Item 1'),
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue[300],
+                    child: Text('Item 2'),
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue[100],
+                    child: Text('Item 3'),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 125,
+              padding: EdgeInsets.all(4),
+              child: ListView.builder(
+                itemCount: listItems.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 50,
+                    color: listItems[index]['color'],
+                    child: Text(listItems[index]['text']),
+                  );
+                },
+              ),
+            ),
+            Container(
+              height: 125,
+              padding: EdgeInsets.all(4),
+              child: ListView.separated(
+                itemCount: listItems.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 50,
+                    color: listItems[index]['color'],
+                    child: Text(listItems[index]['text']),
+                  );
+                },
+                separatorBuilder: (context, index) {
+                  return Divider();
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
