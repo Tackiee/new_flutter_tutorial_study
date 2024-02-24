@@ -327,60 +327,85 @@ class MyApp extends StatelessWidget {
         //     ),
         //   ],
         // ),
+        // body: Column(
+        //   children: <Widget>[
+        //     Container(
+        //       height: 125,
+        //       padding: EdgeInsets.all(4),
+        //       child: ListView(
+        //         children: <Widget>[
+        //           Container(
+        //             height: 50,
+        //             color: Colors.blue[600],
+        //             child: Text('Item 1'),
+        //           ),
+        //           Container(
+        //             height: 50,
+        //             color: Colors.blue[300],
+        //             child: Text('Item 2'),
+        //           ),
+        //           Container(
+        //             height: 50,
+        //             color: Colors.blue[100],
+        //             child: Text('Item 3'),
+        //           ),
+        //         ],
+        //       ),
+        //     ),
+        //     Container(
+        //       height: 125,
+        //       padding: EdgeInsets.all(4),
+        //       child: ListView.builder(
+        //         itemCount: listItems.length,
+        //         itemBuilder: (context, index) {
+        //           return Container(
+        //             height: 50,
+        //             color: listItems[index]['color'],
+        //             child: Text(listItems[index]['text']),
+        //           );
+        //         },
+        //       ),
+        //     ),
+        //     Container(
+        //       height: 125,
+        //       padding: EdgeInsets.all(4),
+        //       child: ListView.separated(
+        //         itemCount: listItems.length,
+        //         itemBuilder: (context, index) {
+        //           return Container(
+        //             height: 50,
+        //             color: listItems[index]['color'],
+        //             child: Text(listItems[index]['text']),
+        //           );
+        //         },
+        //         separatorBuilder: (context, index) {
+        //           return Divider();
+        //         },
+        //       ),
+        //     ),
+        //   ],
+        // ),
         body: Column(
           children: <Widget>[
-            Container(
-              height: 125,
-              padding: EdgeInsets.all(4),
-              child: ListView(
-                children: <Widget>[
-                  Container(
-                    height: 50,
-                    color: Colors.blue[600],
-                    child: Text('Item 1'),
-                  ),
-                  Container(
-                    height: 50,
-                    color: Colors.blue[300],
-                    child: Text('Item 2'),
-                  ),
-                  Container(
-                    height: 50,
-                    color: Colors.blue[100],
-                    child: Text('Item 3'),
-                  ),
-                ],
+            ListTile(
+              leading: Image.network('https://placehold.jp/50x50.png'),
+              title: Text('ListTile'),
+              subtitle: Text('subtitle'),
+              trailing: Icon(Icons.more_vert),
+            ),
+            Card(
+              child: Container(
+                height: 60,
+                width: double.infinity,
+                child: Text('Card'),
               ),
             ),
-            Container(
-              height: 125,
-              padding: EdgeInsets.all(4),
-              child: ListView.builder(
-                itemCount: listItems.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 50,
-                    color: listItems[index]['color'],
-                    child: Text(listItems[index]['text']),
-                  );
-                },
-              ),
-            ),
-            Container(
-              height: 125,
-              padding: EdgeInsets.all(4),
-              child: ListView.separated(
-                itemCount: listItems.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 50,
-                    color: listItems[index]['color'],
-                    child: Text(listItems[index]['text']),
-                  );
-                },
-                separatorBuilder: (context, index) {
-                  return Divider();
-                },
+            Card(
+              child: ListTile(
+                leading: Image.network('https://placehold.jp/50x50.png'),
+                title: Text('ListTile'),
+                subtitle: Text('subtitle'),
+                trailing: Icon(Icons.more_vert),
               ),
             ),
           ],
