@@ -385,28 +385,42 @@ class MyApp extends StatelessWidget {
         //     ),
         //   ],
         // ),
-        body: Column(
-          children: <Widget>[
-            ListTile(
-              leading: Image.network('https://placehold.jp/50x50.png'),
-              title: Text('ListTile'),
-              subtitle: Text('subtitle'),
-              trailing: Icon(Icons.more_vert),
+        // body: Column(
+        //   children: <Widget>[
+        //     ListTile(
+        //       leading: Image.network('https://placehold.jp/50x50.png'),
+        //       title: Text('ListTile'),
+        //       subtitle: Text('subtitle'),
+        //       trailing: Icon(Icons.more_vert),
+        //     ),
+        //     Card(
+        //       child: Container(
+        //         height: 60,
+        //         width: double.infinity,
+        //         child: Text('Card'),
+        //       ),
+        //     ),
+        //     Card(
+        //       child: ListTile(
+        //         leading: Image.network('https://placehold.jp/50x50.png'),
+        //         title: Text('ListTile'),
+        //         subtitle: Text('subtitle'),
+        //         trailing: Icon(Icons.more_vert),
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        appBar: AppBar(
+          leading: Icon(Icons.arrow_back_ios),
+          title: Text('Hello'),
+          actions: <Widget>[
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.favorite),
             ),
-            Card(
-              child: Container(
-                height: 60,
-                width: double.infinity,
-                child: Text('Card'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                leading: Image.network('https://placehold.jp/50x50.png'),
-                title: Text('ListTile'),
-                subtitle: Text('subtitle'),
-                trailing: Icon(Icons.more_vert),
-              ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.more_vert),
             ),
           ],
         ),
